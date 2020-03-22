@@ -8,6 +8,11 @@ const routes = [
     path: '/',
     name: 'Home',
     component: () => import('../views/Home.vue')
+  },
+  {
+    path: '/confirm-account/:confirmationToken',
+    name: 'ConfirmAccount',
+    component: () => import('../views/ConfirmAccount')
   }
 ];
 
